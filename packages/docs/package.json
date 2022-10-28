@@ -1,5 +1,5 @@
 {
-  "name": "@ignite-ui/docs",
+  "name": "@felipecruz-ignite-ui/docs",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -27,10 +27,10 @@
     "vite": "^3.2.0"
   },
   "dependencies": {
-    "@ignite-ui/eslint-config": "*",
-    "@ignite-ui/react": "*",
-    "@ignite-ui/tokens": "*",
-    "@ignite-ui/ts-config": "*",
+    "@felipecruz-ignite-ui/eslint-config": "*",
+    "@felipecruz-ignite-ui/react": "*",
+    "@felipecruz-ignite-ui/tokens": "*",
+    "@felipecruz-ignite-ui/ts-config": "*",
     "@storybook/addon-a11y": "^6.5.13",
     "polished": "^4.2.2",
     "react": "^18.2.0",
