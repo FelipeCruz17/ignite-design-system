@@ -1,8 +1,8 @@
-# Projeto de Design System criado através das aulas assistidas na trilha de Reactjs, Rocketseat <img width="20" height="20" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" />
+# Projeto de Design System 
 
 ## 💻 Projeto
 
-Projeto exclusivo da trilha de Reactjs atualizada recentemente pela Rocketseat.
+Criado através das aulas assistidas na trilha de Reactjs, Rocketseat <img width="20" height="20" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" />
 
 Este projeto será utilizado como uma lib de components estilizados para o próximo projeto da trilha, chamado Ignite Call.
 
