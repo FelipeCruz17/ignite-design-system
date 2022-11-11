@@ -1,0 +1,2 @@
+import{A as t}from"./index.b00ef182.js";import"./index.33e554e4.js";import"./iframe.42701ef8.js";import"./index.ee5e1094.js";import"./jsx-runtime.d6e35bf4.js";const p={title:"Data Display/Avatar",component:t,args:{src:"https://github.com/felipecruz17.png",alt:"Felipe Cruz"},argTypes:{src:{control:{type:"text"}}}},e={},c={args:{src:void 0}},l=["Primary","WithFallback"];export{e as Primary,c as WithFallback,l as __namedExportsOrder,p as default};
+//# sourceMappingURL=Avatar.stories.d979db08.js.map
