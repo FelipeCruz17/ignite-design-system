@@ -1,24 +1,29 @@
-import { Button } from '../..'
-import {
-  TooltipProvider,
-  TooltipRoot,
-  TooltipTrigger,
-  TooltipContent,
-  TooltipArrow,
-} from './styles'
+import * as TooltipPrimitive from '@radix-ui/react-tooltip'
+import { ComponentProps, ReactElement, ReactNode } from 'react'
+import { TooltipArrow, TooltipContent } from './styles'
 
-export function Tooltip() {
+type TooltipPrimitiveProps = ComponentProps<typeof TooltipPrimitive.Root>
+export type TooltipProps = TooltipPrimitiveProps &
+  ComponentProps<typeof TooltipPrimitive.Content> & {
+    children: ReactElement
+    content: string | ReactNode
+  }
+
+export function Tooltip({ content, children, ...props }: TooltipProps) {
   return (
-    <TooltipProvider>
-      <TooltipRoot defaultOpen>
-        <TooltipTrigger asChild>
-          <Button>Hover me</Button>
-        </TooltipTrigger>
-        <TooltipContent>
-          Teste de tooltip content
-          <TooltipArrow />
-        </TooltipContent>
-      </TooltipRoot>
-    </TooltipProvider>
+    <TooltipPrimitive.Provider>
+      <TooltipPrimitive.Root {...props}>
+        <TooltipPrimitive.Trigger asChild>{children}</TooltipPrimitive.Trigger>
+        <TooltipPrimitive.Portal>
+          <TooltipContent>
+            <TooltipArrow />
+
+            {content}
+          </TooltipContent>
+        </TooltipPrimitive.Portal>
+      </TooltipPrimitive.Root>
+    </TooltipPrimitive.Provider>
   )
 }
+
+Tooltip.displayName = 'Tooltip'
